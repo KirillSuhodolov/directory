@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="script/jquery-2.1.1.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+    <meta charset="UTF-8">
+    <title>Справочник</title>
+</head>
+<body>
+ <div class="container">
+     <div class="row" id="header"><!-- start container -->
+         <div class="span12">
+             <h1>Справочник</h1>
+         </div>
+     </div><!-- end container -->
+     <div class="row" id="content"><!-- start content -->
+         <div class="span4 forma"><!-- start forma -->
+             <h2>Добавить новые данные</h2>
+             <div class="alert alert-error error">
+               <p><strong>Внимание!</strong> Введите записи в текстовые поля</p>
+             </div>
+             <div class="alert alert-success success">
+               <p>Заполните все ячейки формы, затем нажмите кнопку "Добавить"</p>
+             </div>
+             <form class="form-horizontal" role="form" id="form">
+               <div class="form-group">
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control inputName" id="inputName" placeholder="Введите Ваше имя">
+                 </div>
+               </div>
+               <br />
+               <div class="form-group">
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control inputSurname" id="inputSurname" placeholder="Введите Вашу фамилию">
+                 </div>
+               <br />
+               </div>
+                 <div class="form-group">
+                   <div class="col-sm-10">
+                     <input type="text" class="form-control inputPatronymic" id="inputPatronymic" placeholder="Введите Ваше отчество">
+                   </div>
+                 </div>
+                 <br />
+                 <div class="form-group">
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control inputTel" id="inputTel" placeholder="Введите Ваш номер телефона">
+                 </div>
+               </div>
+                 <br />
+                 <div class="form-group">
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control inputEmail" id="inputEmail" placeholder="Введите Ваш email">
+                 </div>
+               </div>
+               <br />
+               <div class="form-group">
+                 <div class="col-sm-offset-2 col-sm-10">
+                   <button type="submit" class="btn btn-default btn-primary" id="add">Добавить в список</button>
+                 </div>
+               </div>
+               <br />
+                 <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="button"  class="btn btn-default clear btn-danger" id="clear">Очистить список</button>
+                  </div>
+                </div>
+             </form>
+         </div><!-- end forma -->
+         <div class="span8 lists"><!-- start list -->
+             <form class="navbar-search pull-left">
+             <input type="text" class="search-query inputValue" id="inputValue" placeholder="Введите поисковый запрос">
+             </form>
+             <h3>Список пользователей:</h3>
+             <ul id="directory"></ul><!-- list -->
+         </div><!-- end list -->
+     </div><!--end content -->
+     <div class="row" id="footer"><!-- start footer -->
+         <div class="span12">
+             Artiom Poluyanovich &#169 2014
+         </div>
+     </div><!-- end footer -->
+ </div>
+</body>
+</html>

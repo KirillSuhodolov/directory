@@ -1,0 +1,44 @@
+body{
+    background: #e1e1e8;
+}
+#header {
+    background: #ccc;
+    height: 50px;
+    padding: 10px 5px 10px 5px;
+}
+#content{
+  height: 800px;
+  background-color: #ffffff;
+}
+#footer{
+    background: #333;
+    height: 50px;
+    padding: 10px 5px 10px 5px;
+    color: #ffffff;
+}
+.forma{
+    background: #666;
+    margin: 0;
+    padding: 10px 5px 10px 15px;
+    height: 530px;
+}
+.lists{
+    margin: 0;
+    padding: 10px 5px 10px 5px;
+    background: #ffffff;
+    height: 580px;
+}
+.clear{
+    width: 147px;
+
+}
+.inputName, .inputSurname, .inputPatronymic, .inputTel, .inputEmail{
+  width: 270px;
+}
+
+.error, .success {
+    width: 232px;
+}
+.inputValue{
+    width: 600px;
+}
